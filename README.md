@@ -7,7 +7,7 @@ This is a simple Python script to generate pictures of a feed-forward neural net
 Pipe to Preview in Mac OS X.
 
 ```
-python dotnets.py | dot -Tpng | open -f -a /Applications/Preview.app
+python dotnets.py [options] | dot -Tpng | open -f -a /Applications/Preview.app
 ```
 
 Or generate a PDF
@@ -15,6 +15,12 @@ Or generate a PDF
 ```
 python dotnets.py | dot -Tpdf > test.pdf
 ```
+
+## Options
+* **--color**: color of input and output nodes
+* **--hidden-color**: color of neurons in hidden layers
+* **--penwidth**: width of edge of neurons (edge of circles, not connection between neurons!)
+* **--layer-dim**: neurons in each layer, default is [3,5,5,5,2]
 
 ## Example
 
